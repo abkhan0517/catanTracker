@@ -14,4 +14,16 @@ public class PlayerService {
     public Player addPlayer(Player player) {
         return playerRepo.save(player);
     }
+
+    public Player getPlayerByName(String name) {
+        return playerRepo.findPlayerByName(name);
+    }
+
+    public Player updatePlayer(Player player) {
+        return playerRepo.save(player);
+    }
+
+    public void deletePlayer(Integer id) {
+        playerRepo.deleteById(id);
+    }
 }
